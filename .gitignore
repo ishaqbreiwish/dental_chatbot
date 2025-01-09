@@ -2,4 +2,4 @@ myenv
 __pycache__
 llm.__pycache__
 main.__pycache__
-
+.env
