@@ -2,7 +2,7 @@ from PyPDF2 import PdfReader
 import os
 
 text = ""
-
+folder_path = "documents"
 
 for filename in os.listdir(folder_path):
     curr_file = os.path.join(folder_path, filename)
