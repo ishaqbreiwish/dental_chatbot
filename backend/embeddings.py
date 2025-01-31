@@ -26,7 +26,7 @@ class HuggingFaceEmbeddings(Embeddings):
             return query(texts)
         except Exception as e:
             print(f"Error embedding documents: {e}")
-
+            return None
     
     def embed_query(self, text):
         try:
