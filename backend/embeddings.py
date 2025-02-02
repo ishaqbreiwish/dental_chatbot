@@ -21,6 +21,7 @@ class HuggingFaceEmbeddings(Embeddings):
         self.api_url = api_url
         self.headers = headers
     
+    # creates document embeddings
     def embed_documents(self, texts):
         try:
             return query(texts)
@@ -28,6 +29,7 @@ class HuggingFaceEmbeddings(Embeddings):
             print(f"Error embedding documents: {e}")
             return None
     
+    # creates query embeddings
     def embed_query(self, text):
         try:
             return query([text])[0]
