@@ -31,7 +31,7 @@ class HuggingFaceEmbeddings(Embeddings):
     
     # creates query embeddings
     def embed_query(self, text):
-        try:
+
             return query([text])[0]
         except Exception as e:
             print(f"Error embedding query: {e}")
