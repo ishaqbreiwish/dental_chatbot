@@ -21,7 +21,7 @@ st.title("Your Dental Health Assistant")
 st.markdown("Ask me anything about dental health and hygiene")
 
 # Chat interface
-if "messages" not in st.session_state:
+if "messages"  in st.session_state:
     st.session_state.messages = []
 
 for message in st.session_state.messages:
