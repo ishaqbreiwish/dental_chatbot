@@ -17,7 +17,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("Your Dental Health Assistant")
+
 st.markdown("Ask me anything about dental health and hygiene")
 
 # Chat interface
