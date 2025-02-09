@@ -1,4 +1,4 @@
-from PyPDF2 import PdfReader
+
 import os
 
 text = ""
