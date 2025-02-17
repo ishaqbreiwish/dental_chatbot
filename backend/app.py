@@ -1,5 +1,5 @@
 import streamlit as st
-
+from langchain_query import query_with_langchain
 
 # Configure page
 st.set_page_config(page_title="Dental Assistant", layout="wide")
