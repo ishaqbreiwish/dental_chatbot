@@ -17,7 +17,7 @@ def query_with_langchain(query_text, top_k=5):
     context = "\n".join([doc.page_content for doc in results])
     
     # Generate response using OpenAI
-    client = OpenAI(pi_key=os.environ.get("OPENAI_API_KEY"))
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
     completion = client.chat.completions.create(
         model="gpt-4",
         messages=[
